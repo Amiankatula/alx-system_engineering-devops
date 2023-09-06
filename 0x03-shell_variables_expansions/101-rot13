@@ -1,2 +1,4 @@
 #!/bin/bash
-tr `echo{a..z} | tr -d` " `echo {n..z} $(echo{a..m} | tr -d` " |tr `echo {A..Z} ` " `tr -d ` " `echo{N..Z} $(echo {A..M}) | tr -d
+#!/bin/bash
+[ "$1" == "encode" ] && tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "$2" || [ "$1" == "decode" ] && tr 'A-Za-z' 'N-ZA-Mn-za-m' <<< "$2"
+
