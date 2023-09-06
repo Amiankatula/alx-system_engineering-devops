@@ -1,4 +1,5 @@
 #!/bin/bash
-echo $(($BREAK**LOVE))
+result=$((BREATH**LOVE))
+
 
 
