@@ -1,2 +1,2 @@
 #!/bin/bash
-IFS=':' read -ra path_array <<< "$PATH"
+echo $PATH | tr -cd ':' | wc -c
